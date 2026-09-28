@@ -1,8 +1,8 @@
 # 综合教资备考工作台
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Web%20%2F%20PWA-4285F4?logo=googlechrome&logoColor=white)](https://badcodez.github.io/Jiazi-Practice-Platform/)
-[![Release](https://img.shields.io/github/v/release/BadCodeZ/Jiazi-Practice-Platform?label=Release)](https://github.com/BadCodeZ/Jiazi-Practice-Platform/releases)
+[![Platform](https://img.shields.io/badge/Platform-Web%20%2F%20PWA-4285F4?logo=googlechrome&logoColor=white)](https://badcodez.github.io/Jiaozi-Practice-Platform/)
+[![Release](https://img.shields.io/github/v/release/BadCodeZ/Jiaozi-Practice-Platform?label=Release)](https://github.com/BadCodeZ/Jiaozi-Practice-Platform/releases)
 [![Author](https://img.shields.io/badge/Author-BadCodeZ-181717?logo=github)](https://github.com/BadCodeZ)
 
 **Comprehensive Teacher Certification Preparation Workbench — Single-file Offline Web App**  
@@ -19,7 +19,7 @@
 - [概览](#概览)
 - [相关项目](#相关项目)
 - [版本对比](#版本对比)
-- [版本更新说明（V1.1 → V1.2）](#版本更新说明v11--v12)
+- [版本更新说明（V1.2 → V1.3）](#版本更新说明v12--v13)
 - [版本命名说明](#版本命名说明)
 - [功能特性](#功能特性)
 - [界面概览](#界面概览)
@@ -40,7 +40,7 @@
 
 | 项目 | 说明 |
 |------|------|
-| 版本 | **V1.2**（对外版本号；内部 meta 2.0） |
+| 版本 | **V1.3**（对外版本号；内部 meta 2.0） |
 | 主文件 | `综合教资备考工作台.html`（单文件，2.49 MB） |
 | 内置题量 | 3,342 道（覆盖科一/科二全章节 + 科三 17 个学科） |
 | 运行环境 | 任意现代浏览器（Chrome / Edge 推荐）；支持「添加到主屏幕」变 PWA |
@@ -56,47 +56,38 @@
 
 ### 版本对比
 
-| 项目 | V1.1 | V1.2（本版本） |
-|------|------|----------------|
-| 主文件 | `综合教资备考工作台.html` | `综合教资备考工作台.html` |
-| 大小 | 2.95 MB | 2.49 MB |
-| MD5 | `7c10091b03f64b71083399b0a2c705cf` | `db9f849a2f71248f23763a3ab766d7a2` |
-| 主要变化 | 上一稳定发布版 | 见「版本更新说明」 |
+| 项目 | V1.1 | V1.2 | V1.3（本版本） |
+|------|------|------|----------------|
+| 主文件 | `综合教资备考工作台.html` | 同左 | 同左 |
+| 大小 | 2.95 MB | 2.49 MB | 2.49 MB |
+| MD5 | `7c10091b03f64b71083399b0a2c705cf` | `db9f849a2f71248f23763a3ab766d7a2` | `5411997ffe283375a3780381d8c688da` |
+| 主要变化 | 上一稳定发布版 | 键盘流 / 主动回忆 / AI 自测 / 周报 | 今日可视化仪表盘 / 弱项专项 |
 
-本版本在 V1.1 基础上进行了体验增强与质量校正，属增量迭代。
+本版本在 V1.2 基础上聚焦「提升通过率、不增加复杂度」，为编排层增量迭代，零新增数据模型。
 
 ---
 
-### 版本更新说明（V1.1 → V1.2）
+### 版本更新说明（V1.2 → V1.3）
 
-本版在 V1.1 基础上，主要优化与新增如下：
+本版在 V1.2 基础上，围绕高效有节奏地备考，主要更新如下：
 
-**练习体验**
-- **练习限时倒计时**：可开启时间限制，剩余 1 分钟高亮提醒，模考前帮你掐准节奏。
-- **练习键盘流**：练习中支持 `1–4` / `A–D` 选答，`空格` / `Enter` 进下一题（已作答时）、主观题对答案。
-- **主动回忆遮挡**：新增「主动回忆」开关，客观题先遮挡选项，按 `空格` 揭晓，先回想再看答案，符合检索练习效应。
+**今日可视化仪表盘**
+- **今日视图重构**：新增正确率环、4 项核心指标卡与 7 天趋势迷你图，备考状态一眼看清。
+- **今日节奏编排**：把当天该做的事编排为 4 步——间隔复习 → 弱项专项 → 综合练习 → 错题归因，按序推进即可，不漏环节。
+- **薄弱章节可视化**：薄弱章节以条形图直观呈现，点击直达专项练习。
 
-**答题与总结**
-- **答题总结增强**：练习结束的总结页新增「答题卡回顾」，逐题展示你的作答、正确答案、解析与用时，错题标红、对题标绿，可一键加入复习计划。
-
-**知识库与仪表盘**
-- **知识库 AI 自测**：每张知识卡可一键生成 3 道自测题，答题判分并留痕（`quizLog`），随时检验记忆效果。
-- **学习仪表盘**：今日视图新增「每日回顾」卡片；统计视图新增「周报」（7 天刷题量、正确率趋势、薄弱章节分布）。
-
-**首页精简**
-- **首页去重**：去掉与统计页重复的累计统计行，首页聚焦「今日待办」与「行动入口」。
-
-**题库与质量**
-- **题库数据校正**：修正部分题目的答案、解析与章节归类错误，提升刷题准确性。
+**弱项专项一键包**
+- **一键专项**：自动聚合正确率最低的前 3 个薄弱章节，抽取 15 题组成专项包，直接开练。
+- **零负担**：不新增任何数据模型与配置项，练完即回归主节奏。
 
 **更新提示**
-- **更新弹窗**：首次打开提示 V1.2 更新内容，含「不再提醒」（按版本号，V1.3 仍会提示）与「我知道了」；仅首次加载触发，切换模块不弹。
+- **更新弹窗**：首次打开提示 V1.3 更新内容，含「不再提醒」（按版本号，下次升级仍会提示）与「我知道了」。
 
 ---
 
 ### 版本命名说明
 
-**网页端沿用「V1.x」对外版本号（当前 V1.2，内部 meta 2.0）。**
+**网页端沿用「V1.x」对外版本号（当前 V1.3，内部 meta 2.0）。**
 
 - 网页端与安卓端版本号互不对齐属正常（安卓端内部版本号为 V2.x），二者仅数据互通，不共用版本线。
 - 历史文档中出现的「meta 1.0 / meta 2.0」为内部标记，对外以 V1.x 为主称呼。
@@ -155,7 +146,7 @@
 
 ### 界面概览
 
-本应用为单文件网页，包含「今日 / 练习 / 统计 / 知识库 / 备课 / 设置」等视图。运行效果见在线 Demo：https://badcodez.github.io/Jiazi-Practice-Platform/
+本应用为单文件网页，包含「今日 / 练习 / 统计 / 知识库 / 备课 / 设置」等视图。运行效果见在线 Demo：https://badcodez.github.io/Jiaozi-Practice-Platform/
 
 ---
 
@@ -163,8 +154,8 @@
 
 #### 下载
 
-- **单文件**：从 [Releases 页面](https://github.com/BadCodeZ/Jiazi-Practice-Platform/releases) 下载 `综合教资备考工作台.html` 一个文件即可（约 2.49 MB）。
-- **在线使用**：直接访问 https://badcodez.github.io/Jiazi-Practice-Platform/ （GitHub Pages 托管，无需下载）。
+- **单文件**：从 [Releases 页面](https://github.com/BadCodeZ/Jiaozi-Practice-Platform/releases) 下载 `综合教资备考工作台.html` 一个文件即可（约 2.49 MB）。
+- **在线使用**：直接访问 https://badcodez.github.io/Jiaozi-Practice-Platform/ （GitHub Pages 托管，无需下载）。
 
 #### 三种运行方式
 
@@ -187,8 +178,8 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/BadCodeZ/Jiazi-Practice-Platform.git
-cd Jiazi-Practice-Platform
+git clone https://github.com/BadCodeZ/Jiaozi-Practice-Platform.git
+cd Jiaozi-Practice-Platform
 
 # 2. 本地静态托管（任选其一）
 python -m http.server 8080
@@ -266,9 +257,9 @@ node gate.js   # 期望输出 10/10 全绿
 | 项目 | 值 |
 |------|------|
 | 主文件 | `综合教资备考工作台.html` |
-| 大小 | 2.49 MB（2,606,758 字节） |
-| MD5 | `db9f849a2f71248f23763a3ab766d7a2` |
-| 对外版本 | V1.2（内部 meta 2.0） |
+| 大小 | 2.49 MB（2,607,317 字节） |
+| MD5 | `5411997ffe283375a3780381d8c688da` |
+| 对外版本 | V1.3（内部 meta 2.0） |
 | SW 版本 | `artwb-v22` |
 | 内置题量 | 3,342 道 |
 | 科三学科 | 17 个 |
@@ -312,6 +303,12 @@ node gate.js   # 期望输出 10/10 全绿
 ---
 
 ### 版本历史
+
+#### V1.3 — 可视化仪表盘与弱项专项
+
+- 今日视图重构为可视化仪表盘（正确率环 / 指标卡 / 7 天趋势 / 今日节奏 4 步清单 / 薄弱章节条形图）
+- 弱项专项一键包（自动聚合前 3 弱章 × 15 题，零新增配置）
+- 更新弹窗同步至 V1.3
 
 #### V1.2 — 体验增强与质量校正
 
@@ -363,13 +360,13 @@ limitations under the License.
 
 ### Overview
 
-**Jiazi-Practice-Platform** is an **offline-first single-file web app** for Chinese Teacher Certification (教师资格证) exam preparation. It runs entirely in your browser — no installation, no registration, no server required. All your study data stays on your own device.
+**Jiaozi-Practice-Platform** is an **offline-first single-file web app** for Chinese Teacher Certification (教师资格证) exam preparation. It runs entirely in your browser — no installation, no registration, no server required. All your study data stays on your own device.
 
 | Item | Value |
 |------|-------|
-| Release | V1.2 (meta 2.0) |
+| Release | V1.3 (meta 2.0) |
 | Main File | `综合教资备考工作台.html` (2.49 MB) |
-| File Integrity | MD5: `db9f849a2f71248f23763a3ab766d7a2` |
+| File Integrity | MD5: `5411997ffe283375a3780381d8c688da` |
 | Built-in Questions | 3,342 (covering Subject 1/2 all chapters + Subject 3 across 17 subjects) |
 | Platform | Any modern browser (Chrome/Edge recommended); installable as PWA |
 | Network | Core features are fully offline; only AI commentary, AI generation and WebDAV sync require internet |
@@ -401,7 +398,7 @@ limitations under the License.
 
 ### Download & Install
 
-Download the single file `综合教资备考工作台.html` from the [Releases page](https://github.com/BadCodeZ/Jiazi-Practice-Platform/releases), or use the live Demo at https://badcodez.github.io/Jiazi-Practice-Platform/.
+Download the single file `综合教资备考工作台.html` from the [Releases page](https://github.com/BadCodeZ/Jiaozi-Practice-Platform/releases), or use the live Demo at https://badcodez.github.io/Jiaozi-Practice-Platform/.
 
 **Run**:
 1. Double-click the HTML file (preview only under `file://`, data may not persist)
@@ -413,8 +410,8 @@ Upgrading: overwrite the old HTML with the new same-named file — your `localSt
 ### Run from Source
 
 ```bash
-git clone https://github.com/BadCodeZ/Jiazi-Practice-Platform.git
-cd Jiazi-Practice-Platform
+git clone https://github.com/BadCodeZ/Jiaozi-Practice-Platform.git
+cd Jiaozi-Practice-Platform
 python -m http.server 8080
 ```
 
@@ -425,9 +422,9 @@ Quality gate (after edits): `node gate.js` (expect 10/10 green).
 | Item | Value |
 |------|-------|
 | Main file | `综合教资备考工作台.html` |
-| Size | 2.49 MB (2,606,758 bytes) |
-| MD5 | `db9f849a2f71248f23763a3ab766d7a2` |
-| Release | V1.2 (meta 2.0) |
+| Size | 2.49 MB (2,607,317 bytes) |
+| MD5 | `5411997ffe283375a3780381d8c688da` |
+| Release | V1.3 (meta 2.0) |
 | SW | `artwb-v22` |
 | Built-in questions | 3,342 |
 | Subject 3 tracks | 17 |
@@ -435,6 +432,11 @@ Quality gate (after edits): `node gate.js` (expect 10/10 green).
 | Sync format | `SYNCPKG1` (AES-GCM) |
 
 ### Version History
+
+#### V1.3 — Visual dashboard & weak-focus pack
+- Today view rebuilt as a visual dashboard (accuracy ring / metric cards / 7-day trend / 4-step daily rhythm / weak-chapter bars)
+- One-tap weak-focus pack (auto-aggregates bottom-3 weak chapters × 15 questions, zero new config)
+- Update popup bumped to V1.3
 
 #### V1.2 — Enhancement & fixes
 - Timed practice, keyboard answering, active-recall blur
@@ -459,6 +461,6 @@ Licensed under the Apache License, Version 2.0.
 
 **综合教资备考工作台**  
 作者：BadCodeZ  
-仓库：https://github.com/BadCodeZ/Jiazi-Practice-Platform  
+仓库：https://github.com/BadCodeZ/Jiaozi-Practice-Platform  
 相关安卓端：https://github.com/BadCodeZ/jiaozi-android  
-在线使用：https://badcodez.github.io/Jiazi-Practice-Platform/
+在线使用：https://badcodez.github.io/Jiaozi-Practice-Platform/
