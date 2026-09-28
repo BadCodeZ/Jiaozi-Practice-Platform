@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Web%20%2F%20PWA-4285F4?logo=googlechrome&logoColor=white)](https://badcodez.github.io/Jiazi-Practice-Platform/)
-[![Release](https://img.shields.io/github/v/release/BadCodeZ/jiazi-practice-platform?label=Release)](https://github.com/BadCodeZ/jiazi-practice-platform/releases)
+[![Release](https://img.shields.io/github/v/release/BadCodeZ/Jiazi-Practice-Platform?label=Release)](https://github.com/BadCodeZ/Jiazi-Practice-Platform/releases)
 [![Author](https://img.shields.io/badge/Author-BadCodeZ-181717?logo=github)](https://github.com/BadCodeZ)
 
 **Comprehensive Teacher Certification Preparation Workbench — Single-file Offline Web App**  
@@ -163,7 +163,7 @@
 
 #### 下载
 
-- **单文件**：从 [Releases 页面](https://github.com/BadCodeZ/jiazi-practice-platform/releases) 下载 `综合教资备考工作台.html` 一个文件即可（约 2.49 MB）。
+- **单文件**：从 [Releases 页面](https://github.com/BadCodeZ/Jiazi-Practice-Platform/releases) 下载 `综合教资备考工作台.html` 一个文件即可（约 2.49 MB）。
 - **在线使用**：直接访问 https://badcodez.github.io/Jiazi-Practice-Platform/ （GitHub Pages 托管，无需下载）。
 
 #### 三种运行方式
@@ -187,8 +187,8 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/BadCodeZ/jiazi-practice-platform.git
-cd jiazi-practice-platform
+git clone https://github.com/BadCodeZ/Jiazi-Practice-Platform.git
+cd Jiazi-Practice-Platform
 
 # 2. 本地静态托管（任选其一）
 python -m http.server 8080
@@ -365,7 +365,7 @@ limitations under the License.
 
 ### Overview
 
-**jiazi-practice-platform** is an **offline-first single-file web app** for Chinese Teacher Certification (教师资格证) exam preparation. It runs entirely in your browser — no installation, no registration, no server required. All your study data stays on your own device.
+**Jiazi-Practice-Platform** is an **offline-first single-file web app** for Chinese Teacher Certification (教师资格证) exam preparation. It runs entirely in your browser — no installation, no registration, no server required. All your study data stays on your own device.
 
 | Item | Value |
 |------|-------|
@@ -403,7 +403,7 @@ limitations under the License.
 
 ### Download & Install
 
-Download the single file `综合教资备考工作台.html` from the [Releases page](https://github.com/BadCodeZ/jiazi-practice-platform/releases), or use the live Demo at https://badcodez.github.io/Jiazi-Practice-Platform/.
+Download the single file `综合教资备考工作台.html` from the [Releases page](https://github.com/BadCodeZ/Jiazi-Practice-Platform/releases), or use the live Demo at https://badcodez.github.io/Jiazi-Practice-Platform/.
 
 **Run**:
 1. Double-click the HTML file (preview only under `file://`, data may not persist)
@@ -415,8 +415,8 @@ Upgrading: overwrite the old HTML with the new same-named file — your `localSt
 ### Run from Source
 
 ```bash
-git clone https://github.com/BadCodeZ/jiazi-practice-platform.git
-cd jiazi-practice-platform
+git clone https://github.com/BadCodeZ/Jiazi-Practice-Platform.git
+cd Jiazi-Practice-Platform
 python -m http.server 8080
 ```
 
@@ -461,6 +461,6 @@ Licensed under the Apache License, Version 2.0.
 
 **综合教资备考工作台**  
 作者：BadCodeZ  
-仓库：https://github.com/BadCodeZ/jiazi-practice-platform  
+仓库：https://github.com/BadCodeZ/Jiazi-Practice-Platform  
 相关安卓端：https://github.com/BadCodeZ/jiaozi-android  
 在线使用：https://badcodez.github.io/Jiazi-Practice-Platform/
