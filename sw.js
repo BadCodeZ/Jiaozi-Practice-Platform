@@ -1,6 +1,6 @@
 // 综合教资备考工作台 · Service Worker（离线缓存）
 // 仅缓存单文件应用壳，使「添加到主屏幕」后在无网络时仍可打开。
-const CACHE = 'artwb-v22';
+const CACHE = 'artwb-v23';
 const ASSETS = ['./', './app.html', './manifest.webmanifest', './icon.svg'];
 const FALLBACK = './app.html';
 

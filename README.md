@@ -19,7 +19,7 @@
 - [概览](#概览)
 - [相关项目](#相关项目)
 - [版本对比](#版本对比)
-- [版本更新说明（V1.2 → V1.3）](#版本更新说明v12--v13)
+- [版本更新说明（V1.3 → V1.4.1）](#版本更新说明v13--v141)
 - [版本命名说明](#版本命名说明)
 - [功能特性](#功能特性)
 - [界面概览](#界面概览)
@@ -40,9 +40,9 @@
 
 | 项目 | 说明 |
 |------|------|
-| 版本 | **V1.3**（对外版本号；内部 meta 2.0） |
-| 主文件 | `综合教资备考工作台.html`（单文件，2.49 MB） |
-| 内置题量 | 3,342 道（覆盖科一/科二全章节 + 科三 17 个学科） |
+| 版本 | **V1.4.1**（对外版本号；内部 meta 2.0） |
+| 主文件 | `综合教资备考工作台.html`（单文件，3.35 MB） |
+| 内置题量 | 4,780 道（覆盖科一/科二全章节 + 科三 17 个学科） |
 | 运行环境 | 任意现代浏览器（Chrome / Edge 推荐）；支持「添加到主屏幕」变 PWA |
 | 网络依赖 | 核心功能全部离线可用，仅 AI 讲评、AI 出题与 WebDAV 同步需联网 |
 | 源码 | 单文件 HTML，全部开源 |
@@ -56,38 +56,34 @@
 
 ### 版本对比
 
-| 项目 | V1.1 | V1.2 | V1.3（本版本） |
-|------|------|------|----------------|
+| 项目 | V1.2 | V1.3 | V1.4.1（本版本） |
+|------|------|------|------------------|
 | 主文件 | `综合教资备考工作台.html` | 同左 | 同左 |
-| 大小 | 2.95 MB | 2.49 MB | 2.49 MB |
-| MD5 | `7c10091b03f64b71083399b0a2c705cf` | `db9f849a2f71248f23763a3ab766d7a2` | `5411997ffe283375a3780381d8c688da` |
-| 主要变化 | 上一稳定发布版 | 键盘流 / 主动回忆 / AI 自测 / 周报 | 今日可视化仪表盘 / 弱项专项 |
+| 大小 | 2.49 MB | 2.49 MB | 3.35 MB |
+| MD5 | `db9f849a2f71248f23763a3ab766d7a2` | `5411997ffe283375a3780381d8c688da` | `fc7cbf45b9c0a7130cb2a17c3eaf18a0` |
+| 主要变化 | 键盘流 / 主动回忆 / AI 自测 / 周报 | 今日可视化仪表盘 / 弱项专项 | 练习结算重构 / 遗忘曲线复习闭环 / 沉浸式练习 |
 
-本版本在 V1.2 基础上聚焦「提升通过率、不增加复杂度」，为编排层增量迭代，零新增数据模型。
+本版本把练习、错题、知识卡三条线接成同一套复习节奏，零联网、零注册、数据仍留在本地。
 
 ---
 
-### 版本更新说明（V1.2 → V1.3）
+### 版本更新说明（V1.3 → V1.4.1）
 
-本版在 V1.2 基础上，围绕高效有节奏地备考，主要更新如下：
+本版把练习、错题、知识卡三条线接成同一套复习节奏，并加入沉浸式练习。
 
-**今日可视化仪表盘**
-- **今日视图重构**：新增正确率环、4 项核心指标卡与 7 天趋势迷你图，备考状态一眼看清。
-- **今日节奏编排**：把当天该做的事编排为 4 步——间隔复习 → 弱项专项 → 综合练习 → 错题归因，按序推进即可，不漏环节。
-- **薄弱章节可视化**：薄弱章节以条形图直观呈现，点击直达专项练习。
-
-**弱项专项一键包**
-- **一键专项**：自动聚合正确率最低的前 3 个薄弱章节，抽取 15 题组成专项包，直接开练。
-- **零负担**：不新增任何数据模型与配置项，练完即回归主节奏。
-
-**更新提示**
-- **更新弹窗**：首次打开提示 V1.3 更新内容，含「不再提醒」（按版本号，下次升级仍会提示）与「我知道了」。
+- **练习与结算**：限时模考倒计时自动交卷、题号导航与断点续练；策略 × 范围 × 题量三层设置、薄弱加权抽样、科目穿插；主观题分点 / 速记 / 成文三模态；结算页回显本次配置，一键「再来一组 / 专攻错题 / 三维专项组卷」，核心操作前置到成绩卡。
+- **作答手感**：选错可撤回重答、答对可声明蒙对并改排到明天、← → 切题 / U 撤回 / G 标蒙对 / M 标待定；交卷前摊开未答与待定数量，超时也一并归档。
+- **错题本**：按遗忘曲线生成复习队列，逾期 / 今天 / 未排期分档、按紧迫度排序、一键开练；页面标签与筛选项分层，科目与错因收进可折叠筛选，复习与导出都跟随当前筛选。
+- **知识库与首页**：到期卡片一键翻卡自评，间隔按 3 / 7 / 15 / 30 天推进，未排期可铺到未来 7 天；首页待办把题目与知识卡合在一起报数，两类入口各自独立。
+- **联动复习**：答错会拉来同章节知识卡（已到期的不动、每天最多 6 张）；AI 自测联动复习排期，全对才推进间隔、有错明天再来，同一天重复不刷分。
+- **沉浸式练习**：开始答题后顶栏、侧栏、底部导航与搜索全部锁定，误点只提示不跳页；唯一出口是练习页右上角「退出」，可选保存或放弃，交卷后自动解锁。
+- **界面与提示**：系统提示改底部非阻塞 toast，补齐四档语义状态色，导航收敛为顶栏胶囊 + 更多抽屉，首页先给动作再给数据。
 
 ---
 
 ### 版本命名说明
 
-**网页端沿用「V1.x」对外版本号（当前 V1.3，内部 meta 2.0）。**
+**网页端沿用「V1.x」对外版本号（当前 V1.4.1，内部 meta 2.0）。**
 
 - 网页端与安卓端版本号互不对齐属正常（安卓端内部版本号为 V2.x），二者仅数据互通，不共用版本线。
 - 历史文档中出现的「meta 1.0 / meta 2.0」为内部标记，对外以 V1.x 为主称呼。
@@ -154,7 +150,7 @@
 
 #### 下载
 
-- **单文件**：从 [Releases 页面](https://github.com/BadCodeZ/Jiaozi-Practice-Platform/releases) 下载 `综合教资备考工作台.html` 一个文件即可（约 2.49 MB）。
+- **单文件**：从 [Releases 页面](https://github.com/BadCodeZ/Jiaozi-Practice-Platform/releases) 下载 `综合教资备考工作台.html` 一个文件即可（约 3.35 MB）。
 - **在线使用**：直接访问 https://badcodez.github.io/Jiaozi-Practice-Platform/ （GitHub Pages 托管，无需下载）。
 
 #### 三种运行方式
@@ -190,10 +186,10 @@ python -m http.server 8080
 
 #### 质量门禁
 
-仓库内置 `gate.js` 十项门禁（语法/渲染/关键函数/数据一致性等）。修改源码后建议本地跑一遍：
+仓库内置 `gate.js` 二十五项门禁（语法 / 渲染 / 关键函数 / 数据一致性 / 各版本行为回归等）。修改源码后建议本地跑一遍：
 
 ```bash
-node gate.js   # 期望输出 10/10 全绿
+node gate.js   # 期望输出 25/25 全绿
 ```
 
 > 说明：题库与知识库内置在 html 内联数据中，不随 WebDAV 同步包导出；AI Key 存于独立键 `ai_key`，不进备份、不同步。
@@ -244,7 +240,7 @@ node gate.js   # 期望输出 10/10 全绿
 | 语言 | HTML5 / CSS3 / 原生 JavaScript（ES2020） |
 | 架构 | 单文件 SPA · 视图状态机 |
 | 数据持久化 | localStorage（`artwb_v2_data`）+ IndexedDB（原文） |
-| 离线 | PWA Service Worker（`artwb-v22`） |
+| 离线 | PWA Service Worker（`artwb-v23`） |
 | 同步 | WebDAV + AES-GCM（`SYNCPKG1`） |
 | AI | Fetch → DeepSeek / OpenAI / Moonshot |
 | 文档解析 | pdf.js / mammoth（按需加载） |
@@ -257,11 +253,11 @@ node gate.js   # 期望输出 10/10 全绿
 | 项目 | 值 |
 |------|------|
 | 主文件 | `综合教资备考工作台.html` |
-| 大小 | 2.49 MB（2,607,317 字节） |
-| MD5 | `5411997ffe283375a3780381d8c688da` |
-| 对外版本 | V1.3（内部 meta 2.0） |
-| SW 版本 | `artwb-v22` |
-| 内置题量 | 3,342 道 |
+| 大小 | 3.35 MB（3346774 字节） |
+| MD5 | `fc7cbf45b9c0a7130cb2a17c3eaf18a0` |
+| 对外版本 | V1.4.1（内部 meta 2.0） |
+| SW 版本 | `artwb-v23` |
+| 内置题量 | 4,780 道 |
 | 科三学科 | 17 个 |
 | 数据键名 | `artwb_v2_data`（localStorage） |
 | 同步格式 | `SYNCPKG1`（AES-GCM） |
@@ -304,6 +300,13 @@ node gate.js   # 期望输出 10/10 全绿
 
 ### 版本历史
 
+#### V1.4.1 — 练习结算重构 / 复习闭环 / 沉浸式练习
+
+- 练习：三层设置、加权抽样、科目穿插、主观题三模态、断点续练；结算页配置回显与操作前置（V1.4.1–V1.4.6）
+- 错题本：遗忘曲线队列 + 信息架构重排；知识库到期翻卡；首页待办题目与知识卡合并（V1.4.7–V1.4.10）
+- 联动复习：答错题拉知识卡、AI 自测排期；沉浸式练习锁定切页（V1.4.11–V1.4.13）
+- 内置题量扩充至 4,780 道；更新弹窗文案整合为 7 条主题
+
 #### V1.3 — 可视化仪表盘与弱项专项
 
 - 今日视图重构为可视化仪表盘（正确率环 / 指标卡 / 7 天趋势 / 今日节奏 4 步清单 / 薄弱章节条形图）
@@ -332,7 +335,7 @@ node gate.js   # 期望输出 10/10 全绿
 
 1. 提交 Issue 前搜索是否已有类似问题
 2. 描述清晰，包含复现步骤（如适用）
-3. 代码提交前通过 `node gate.js` 质量门禁（10/10 全绿）
+3. 代码提交前通过 `node gate.js` 质量门禁（25/25 全绿）
 
 ---
 
@@ -364,10 +367,10 @@ limitations under the License.
 
 | Item | Value |
 |------|-------|
-| Release | V1.3 (meta 2.0) |
-| Main File | `综合教资备考工作台.html` (2.49 MB) |
-| File Integrity | MD5: `5411997ffe283375a3780381d8c688da` |
-| Built-in Questions | 3,342 (covering Subject 1/2 all chapters + Subject 3 across 17 subjects) |
+| Release | V1.4.1 (meta 2.0) |
+| Main File | `综合教资备考工作台.html` (3.35 MB) |
+| File Integrity | MD5: `fc7cbf45b9c0a7130cb2a17c3eaf18a0` |
+| Built-in Questions | 4,780 (covering Subject 1/2 all chapters + Subject 3 across 17 subjects) |
 | Platform | Any modern browser (Chrome/Edge recommended); installable as PWA |
 | Network | Core features are fully offline; only AI commentary, AI generation and WebDAV sync require internet |
 | Source Code | Single-file HTML, fully open source |
@@ -415,23 +418,29 @@ cd Jiaozi-Practice-Platform
 python -m http.server 8080
 ```
 
-Quality gate (after edits): `node gate.js` (expect 10/10 green).
+Quality gate (after edits): `node gate.js` (expect 25/25 green).
 
 ### Technical Spec
 
 | Item | Value |
 |------|-------|
 | Main file | `综合教资备考工作台.html` |
-| Size | 2.49 MB (2,607,317 bytes) |
-| MD5 | `5411997ffe283375a3780381d8c688da` |
-| Release | V1.3 (meta 2.0) |
-| SW | `artwb-v22` |
-| Built-in questions | 3,342 |
+| Size | 3.35 MB (3346774 bytes) |
+| MD5 | `fc7cbf45b9c0a7130cb2a17c3eaf18a0` |
+| Release | V1.4.1 (meta 2.0) |
+| SW | `artwb-v23` |
+| Built-in questions | 4,780 |
 | Subject 3 tracks | 17 |
 | Data store | localStorage (`artwb_v2_data`) + IndexedDB |
 | Sync format | `SYNCPKG1` (AES-GCM) |
 
 ### Version History
+
+#### V1.4.1 — Practice / settlement rebuild, spaced-review loop, immersive practice
+- Practice: 3-layer setup, weighted sampling, interleaved subjects, three subjective modes, resumable sessions; settlement config recall and front-loaded actions (V1.4.1–V1.4.6)
+- Wrong book: forgetting-curve queue and IA rework; knowledge-card due review; home to-do merges questions and cards (V1.4.7–V1.4.10)
+- Linked review: wrong answers pull knowledge cards; AI self-quiz drives scheduling; immersive practice locks navigation (V1.4.11–V1.4.13)
+- Built-in questions expanded to 4,780; update popup condensed to 7 topics
 
 #### V1.3 — Visual dashboard & weak-focus pack
 - Today view rebuilt as a visual dashboard (accuracy ring / metric cards / 7-day trend / 4-step daily rhythm / weak-chapter bars)
